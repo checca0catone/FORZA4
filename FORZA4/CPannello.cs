@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace FORZA4
 {
     internal class CPannello
     {
-        public int x;
-        public int y;
+        public Panel pannello;
         public bool occupato;
 
-        public CPannello(int X, int Y)
+        public CPannello()
         {
-            x = X;
-            y = Y;
+            pannello = new Panel();
             occupato = false;
         }
     }

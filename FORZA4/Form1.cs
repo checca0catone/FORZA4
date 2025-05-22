@@ -17,9 +17,16 @@ namespace FORZA4
             InitializeComponent();
         }
 
-        private void Forza4_Load(object sender, EventArgs e)
+        private void btn2_Click(object sender, EventArgs e)
         {
-            
+            CColonna colonna = new CColonna(2);
+            for(int i = 0; i < 6; i++)
+            {
+                if(colonna.pannelliColonna[i].occupato == false)
+                {
+                    colonna.pannelliColonna[i].pannello.BackgroundImage = Properties.Resources.cer
+                }
+            }
         }
     }
 }
