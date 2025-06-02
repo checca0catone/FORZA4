@@ -73,9 +73,29 @@ namespace FORZA4.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cerchiogiallo {
+            get {
+                object obj = ResourceManager.GetObject("cerchiogiallo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cerchiorosso {
             get {
                 object obj = ResourceManager.GetObject("cerchiorosso", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sfondo {
+            get {
+                object obj = ResourceManager.GetObject("sfondo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

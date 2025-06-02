@@ -30,13 +30,15 @@
         {
             this.tblgriglia = new System.Windows.Forms.TableLayoutPanel();
             this.btn1 = new System.Windows.Forms.Button();
+            this.btnistruzioni = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
             this.btn6 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
-            this.btnistruzioni = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnl7 = new System.Windows.Forms.Panel();
             this.pnl6 = new System.Windows.Forms.Panel();
             this.pnl5 = new System.Windows.Forms.Panel();
@@ -79,6 +81,8 @@
             this.pnl19 = new System.Windows.Forms.Panel();
             this.pnl26 = new System.Windows.Forms.Panel();
             this.pnl25 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.tblgriglia.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,7 +138,7 @@
             this.tblgriglia.Controls.Add(this.pnl19, 4, 2);
             this.tblgriglia.Controls.Add(this.pnl26, 4, 3);
             this.tblgriglia.Controls.Add(this.pnl25, 3, 3);
-            this.tblgriglia.Location = new System.Drawing.Point(133, 178);
+            this.tblgriglia.Location = new System.Drawing.Point(118, 159);
             this.tblgriglia.Name = "tblgriglia";
             this.tblgriglia.RowCount = 6;
             this.tblgriglia.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
@@ -148,104 +152,138 @@
             // 
             // btn1
             // 
-            this.btn1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn1.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn1.Location = new System.Drawing.Point(133, 97);
+            this.btn1.Location = new System.Drawing.Point(132, 118);
             this.btn1.Margin = new System.Windows.Forms.Padding(0);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(75, 75);
+            this.btn1.Size = new System.Drawing.Size(45, 35);
             this.btn1.TabIndex = 1;
+            this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
+            // 
+            // btnistruzioni
+            // 
+            this.btnistruzioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnistruzioni.Location = new System.Drawing.Point(630, 12);
+            this.btnistruzioni.Name = "btnistruzioni";
+            this.btnistruzioni.Size = new System.Drawing.Size(125, 39);
+            this.btnistruzioni.TabIndex = 8;
+            this.btnistruzioni.Text = "Come giocare?";
+            this.btnistruzioni.UseVisualStyleBackColor = true;
+            this.btnistruzioni.Click += new System.EventHandler(this.btnistruzioni_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(274, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(219, 55);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "FORZA4";
             // 
             // btn2
             // 
-            this.btn2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn2.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn2.Location = new System.Drawing.Point(208, 97);
+            this.btn2.Location = new System.Drawing.Point(209, 118);
             this.btn2.Margin = new System.Windows.Forms.Padding(0);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(75, 75);
-            this.btn2.TabIndex = 2;
+            this.btn2.Size = new System.Drawing.Size(45, 35);
+            this.btn2.TabIndex = 10;
+            this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
-            this.btn3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn3.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn3.Location = new System.Drawing.Point(283, 97);
+            this.btn3.Location = new System.Drawing.Point(284, 118);
             this.btn3.Margin = new System.Windows.Forms.Padding(0);
             this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(75, 75);
-            this.btn3.TabIndex = 3;
+            this.btn3.Size = new System.Drawing.Size(45, 35);
+            this.btn3.TabIndex = 11;
+            this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
             // 
             // btn4
             // 
-            this.btn4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn4.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn4.Location = new System.Drawing.Point(358, 97);
+            this.btn4.Location = new System.Drawing.Point(359, 118);
             this.btn4.Margin = new System.Windows.Forms.Padding(0);
             this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(75, 75);
-            this.btn4.TabIndex = 4;
+            this.btn4.Size = new System.Drawing.Size(45, 35);
+            this.btn4.TabIndex = 12;
+            this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
             // 
             // btn5
             // 
-            this.btn5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn5.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn5.Location = new System.Drawing.Point(433, 97);
+            this.btn5.Location = new System.Drawing.Point(431, 118);
             this.btn5.Margin = new System.Windows.Forms.Padding(0);
             this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(75, 75);
-            this.btn5.TabIndex = 5;
+            this.btn5.Size = new System.Drawing.Size(45, 35);
+            this.btn5.TabIndex = 13;
+            this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
             // 
             // btn6
             // 
-            this.btn6.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn6.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn6.Location = new System.Drawing.Point(508, 97);
+            this.btn6.Location = new System.Drawing.Point(507, 118);
             this.btn6.Margin = new System.Windows.Forms.Padding(0);
             this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(75, 75);
-            this.btn6.TabIndex = 6;
+            this.btn6.Size = new System.Drawing.Size(45, 35);
+            this.btn6.TabIndex = 14;
+            this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
             // 
             // btn7
             // 
-            this.btn7.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn7.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn7.Location = new System.Drawing.Point(583, 97);
+            this.btn7.Location = new System.Drawing.Point(583, 118);
             this.btn7.Margin = new System.Windows.Forms.Padding(0);
             this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(75, 75);
-            this.btn7.TabIndex = 7;
+            this.btn7.Size = new System.Drawing.Size(45, 35);
+            this.btn7.TabIndex = 15;
+            this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
             // 
-            // btnistruzioni
+            // panel1
             // 
-            this.btnistruzioni.Location = new System.Drawing.Point(782, 178);
-            this.btnistruzioni.Name = "btnistruzioni";
-            this.btnistruzioni.Size = new System.Drawing.Size(140, 57);
-            this.btnistruzioni.TabIndex = 8;
-            this.btnistruzioni.Text = "ISTRUZIONI";
-            this.btnistruzioni.UseVisualStyleBackColor = true;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.BackgroundImage = global::FORZA4.Properties.Resources.sfondo;
+            this.panel1.Location = new System.Drawing.Point(94, 605);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(573, 35);
+            this.panel1.TabIndex = 16;
             // 
             // pnl7
             // 
@@ -709,24 +747,47 @@
             this.pnl25.Size = new System.Drawing.Size(75, 75);
             this.pnl25.TabIndex = 3;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel2.BackgroundImage = global::FORZA4.Properties.Resources.sfondo;
+            this.panel2.Location = new System.Drawing.Point(640, 159);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(27, 450);
+            this.panel2.TabIndex = 17;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel3.BackgroundImage = global::FORZA4.Properties.Resources.sfondo;
+            this.panel3.Location = new System.Drawing.Point(94, 159);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(27, 450);
+            this.panel3.TabIndex = 18;
+            // 
             // Forza4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 661);
-            this.Controls.Add(this.btnistruzioni);
+            this.ClientSize = new System.Drawing.Size(767, 643);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.btn6);
             this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnistruzioni);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.tblgriglia);
             this.Name = "Forza4";
-            this.Text = "FORA4GAME";
+            this.Text = "2";
             this.tblgriglia.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -776,13 +837,17 @@
         private System.Windows.Forms.Panel pnl19;
         private System.Windows.Forms.Panel pnl26;
         private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btnistruzioni;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn4;
         private System.Windows.Forms.Button btn5;
         private System.Windows.Forms.Button btn6;
         private System.Windows.Forms.Button btn7;
-        private System.Windows.Forms.Button btnistruzioni;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

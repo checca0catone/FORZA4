@@ -9,13 +9,19 @@ namespace FORZA4
 {
     internal class CPannello
     {
-        public Panel pannello;
+        public Panel panel;
         public bool occupato;
+        public string colore;
+        public bool giallo;
+        public int num;
 
-        public CPannello()
+        public CPannello(string nomePannello, int Num, Form form)
         {
-            pannello = new Panel();
+            panel = (Panel)form.Controls.Find(nomePannello, true)[0];
+            panel.Name = nomePannello;
             occupato = false;
+            colore = "";
+            num = Num;
         }
     }
 }

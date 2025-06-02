@@ -9,15 +9,15 @@ namespace FORZA4
 {
     internal class CColonna
     {
-        private int x;
         public List<CPannello> pannelliColonna = new List<CPannello>();
 
-        public CColonna(int X)
+        public CColonna(int colonna, Form form) 
         {
-            x = X;
-            for (int i = 0; i < 6; i++)
+            for (int riga = 0; riga < 6; riga++)
             {
-                CPannello pannello = new CPannello();
+                int indice = colonna + (riga * 7);
+                string nomePannello = $"pnl{indice}";
+                CPannello pannello = new CPannello(nomePannello, indice, form);
                 pannelliColonna.Add(pannello);
             }
         }
